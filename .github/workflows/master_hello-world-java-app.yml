@@ -21,7 +21,7 @@ jobs:
       - name: Set up Java version
         uses: actions/setup-java@v4
         with:
-          java-version: 'java25'
+          java-version: '25'
           distribution: 'microsoft'
 
       - name: Build with Maven
@@ -51,3 +51,4 @@ jobs:
           slot-name: 'Production'
           package: '*.war'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_A183402F2E10411390431214880D6CD0 }}
+
